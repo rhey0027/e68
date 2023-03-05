@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>working with EJS</title>
+</head>
+<body>
+     <%- include("partials/nav")%>
+      <h2>Post List <%= post.length %></h2>
+      <!-- render the contents of posts payload -->
+      <% post.forEach((post)=>{%>
+            <p><%= post.title %>, <%= post.duration %></p>
+            <hr>
+      <%})%>
+      <p>Wecome to Post listing</p>
+    
+</body>
+</html>
